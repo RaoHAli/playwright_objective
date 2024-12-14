@@ -1,8 +1,7 @@
 // loginTest.spec.ts
 import { test, expect } from '@playwright/test';
-import { loginUrl } from '../config/config';
 import LoginPage from '../pageObjects/loginPage';
-import loginData from '../config/login.json';
+import loginData from '../fixtures/login.json';
 
 
 test.beforeEach(async ({ page , baseURL}) => {
