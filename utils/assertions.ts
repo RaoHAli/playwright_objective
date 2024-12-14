@@ -31,10 +31,15 @@ export async function verifyElementIsVisible(page: Page, locator: string) {
     await expect(page.locator(locator)).toBeVisible();
 }
 
+export async function expectToBeValue(expectedValue: string, actualValue: string, errorMessage: string) {
+  expect(expectedValue.trim(), errorMessage).toBe(actualValue);
+}
+
 // Default export the functions
 export default {
     verifyElementIsDisabled,
     verifyElementContainsText,
     verifyElementIsEmpty,
-    verifyElementIsVisible
+    verifyElementIsVisible,
+    expectToBeValue
 };
