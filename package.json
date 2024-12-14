@@ -1,5 +1,5 @@
 {
-  "name": "patientq-automationframework-playwright",
+  "name": "playwright-",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {},
@@ -8,12 +8,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.48.1",
+    "@playwright/test": "^1.49.1",
     "@types/node": "^22.7.7"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
     "mysql2": "^3.11.4",
-    "patientq-automationframework-playwright": "file:"
+    "patientq-automationframework-playwright": "file:",
+    "playwright-": "file:"
   }
 }
