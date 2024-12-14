@@ -4,7 +4,7 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   
- // fullyParallel: true, //Run tests in files in parallel
+ //fullyParallel: true, //Run tests in files in parallel
 
   forbidOnly: !!process.env.CI,
  

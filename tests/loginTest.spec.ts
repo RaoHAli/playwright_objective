@@ -2,12 +2,12 @@
 import { test, expect } from '@playwright/test';
 import { loginUrl } from '../config/config';
 import LoginPage from '../pageObjects/loginPage';
-import loginData from '../config/login.json'; // Assuming you have proper types for JSON
+import loginData from '../config/login.json';
 
 
-test.beforeEach(async ({ page }) => {
+test.beforeEach(async ({ page , baseURL}) => {
     const loginPage = new LoginPage(page);
-   await loginPage.openUrl(loginUrl)
+   await loginPage.openUrl('/')
 });
 
 test.describe('Login', () => {

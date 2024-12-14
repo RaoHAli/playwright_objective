@@ -11,7 +11,7 @@ export class CommonFunctions {
   }
 
   async navigateToURL(url: string) {
-    this.page.goto(url);
+    await this.page.goto(url);
   }
 
   async waitForElementAttached(locator: string) {
