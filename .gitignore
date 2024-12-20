@@ -6,3 +6,5 @@ node_modules/
 .env
 /tests/dbTest.spec.ts
 /utils/database.ts
+/allure-report/
+/allure-results/

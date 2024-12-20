@@ -1,6 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
 
+
 export default defineConfig({
   testDir: './tests',
   
@@ -11,6 +12,10 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0, //Retry on CI only
 
   workers: process.env.CI ? 1 : undefined, //Opt out of parallel tests on CI.
+  reporter: [
+    ['dot'], // Optional: Other reporters (e.g., dot, list)
+    ['allure-playwright', { outputFolder: 'allure-results' }],
+  ],
  
   use: {
     baseURL: 'https://www.saucedemo.com/',
